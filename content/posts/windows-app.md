@@ -1,6 +1,6 @@
 ---
 date: '2026-01-20T13:07:20-05:00'
-draft: true
+draft: false
 title: 'Beyond the Default: 11 Apps That Fix Windows Biggest Annoyances'
 tags: ["tech", "Windows", "Apps"]
 categories: ["Recommendation"]        
