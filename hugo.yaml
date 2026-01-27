@@ -1,0 +1,50 @@
+baseURL: "https://LoveIiei.github.io/"
+title: "Owen Blog"
+theme: "PaperMod"   # <--- THIS LINE IS MISSING!
+languageCode: "en-us"
+
+# ... rest of your config ...
+
+# 1. ENABLE SEARCH LOGIC
+# This generates the index.json file needed for search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# 2. CONFIGURE PAPERMOD SPECIFICS
+params:
+  defaultTheme: light
+  ShowShareButtons: False
+  ShowReadingTime: true
+  
+  # Search Config (Nested under params)
+  fuseOpts:
+    isCaseSensitive: false
+    score: 0.5
+    limit: 10
+
+  socialIcons:
+  - name: github
+    url: "https://github.com/LoveIiei"
+  - name: linkedin
+    url: "https://www.linkedin.com/in/weiyuan-hua-3345232a6/"
+
+
+# 3. BUILD THE TOP MENU
+# In YAML, the dashes (-) indicate a list of items
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archive
+      url: /archives/
+      weight: 30
