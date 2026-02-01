@@ -1,0 +1,19 @@
+{{- if .Params.comments | default true -}}
+<div class="comments">
+    <script src="https://giscus.app/client.js"
+        data-repo="LoveIiei/LoveIiei.github.io"
+        data-repo-id="R_kgDORB8Lxw"
+        data-category="General"
+        data-category-id="DIC_kwDORB8Lx84C1usb"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="{{ if eq .Lang "zh" }}zh-CN{{ else }}en{{ end }}"
+        crossorigin="anonymous"
+        async>
+    </script>
+</div>
+{{- end -}}

@@ -67,6 +67,7 @@ params:
   defaultTheme: light
   ShowShareButtons: false
   ShowReadingTime: true
+  comments: true
   showFullTextinSocialIcons: true
   # Ensures posts in subdirectories show up in the main list
   mainSections:
