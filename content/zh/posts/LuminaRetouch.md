@@ -1,6 +1,7 @@
 ---
 date: '2026-01-31T16:24:50-05:00'
 draft: false
+showToc: true
 title: 'LuminaRetouch: 专业级AI照片编辑，无需专业级价格'
 tags: ["tech", "Photo Editing", "MyApps"]
 categories: ["Development notes"]    

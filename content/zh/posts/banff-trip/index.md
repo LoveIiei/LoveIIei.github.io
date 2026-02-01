@@ -1,6 +1,7 @@
 ---
 date: '2025-12-24T00:00:00-05:00'
 draft: false
+showToc: true
 title: '2025 Banff旅行记'
 tags: ["travel"]
 categories: ["Travelogue"]

@@ -1,6 +1,7 @@
 ---
 date: '2026-01-31T16:24:50-05:00'
 draft: false
+showToc: true
 title: 'LuminaRetouch: Pro-Level AI Photo Editing, Without the Pro-Level Price'
 tags: ["tech", "Photo Editing", "MyApps"]
 categories: ["Development notes"]    

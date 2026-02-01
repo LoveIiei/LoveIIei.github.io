@@ -1,6 +1,7 @@
 ---
 date: '2026-01-20T13:07:20-05:00'
 draft: false
+showToc: true
 title: '突破默认：11款解决Windows最大烦恼的应用'
 tags: ["tech", "Windows", "Apps"]
 categories: ["Recommendation"]        
