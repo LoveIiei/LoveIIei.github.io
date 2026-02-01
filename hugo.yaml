@@ -1,50 +1,79 @@
 baseURL: "https://LoveIiei.github.io/"
-title: "Owen Blog"
-theme: "PaperMod"   # <--- THIS LINE IS MISSING!
-languageCode: "en-us"
+theme: "PaperMod"
+languageCode: "en"
+defaultContentLanguage: "en"
 
-# ... rest of your config ...
+languages:
+  en:
+    languageName: "English"
+    contentDir: "content/en"  # Points to your English folder
+    weight: 1
+    title: "Owen's Blog"
+    # Enables search index for English
+    outputs:
+      home: ["HTML", "RSS", "JSON"]
+    params:
+      socialIcons:
+        - name: github
+          url: "https://github.com/LoveIiei"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/weiyuan-hua-3345232a6/"
+    menu:
+      main:
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 10
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 20
+        - identifier: archives
+          name: Archive
+          url: /archives/
+          weight: 30
 
-# 1. ENABLE SEARCH LOGIC
-# This generates the index.json file needed for search
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
+  zh:
+    languageName: "中文"
+    contentDir: "content/zh"  # Points to your Chinese folder
+    weight: 2
+    title: "欧文的博客"
+    # Enables search index for Chinese
+    outputs:
+      home: ["HTML", "RSS", "JSON"]
+    params:
+      socialIcons:
+        - name: github
+          url: "https://github.com/LoveIiei"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/weiyuan-hua-3345232a6/"
+    menu:
+      main:
+        - identifier: search
+          name: 搜索
+          url: /zh/search/    # Prefixed for Chinese
+          weight: 10
+        - identifier: tags
+          name: 标签
+          url: /zh/tags/      # Prefixed for Chinese
+          weight: 20
+        - identifier: archives
+          name: 归档
+          url: /zh/archives/  # Prefixed for Chinese
+          weight: 30
 
-# 2. CONFIGURE PAPERMOD SPECIFICS
+# Global Parameters (Apply to both languages)
 params:
   defaultTheme: light
-  ShowShareButtons: False
+  ShowShareButtons: false
   ShowReadingTime: true
+  showFullTextinSocialIcons: true
+  # Ensures posts in subdirectories show up in the main list
+  mainSections:
+    - posts
   
-  # Search Config (Nested under params)
+  # Search Configuration
   fuseOpts:
     isCaseSensitive: false
     score: 0.5
     limit: 10
-
-  socialIcons:
-  - name: github
-    url: "https://github.com/LoveIiei"
-  - name: linkedin
-    url: "https://www.linkedin.com/in/weiyuan-hua-3345232a6/"
-
-
-# 3. BUILD THE TOP MENU
-# In YAML, the dashes (-) indicate a list of items
-menu:
-  main:
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 20
-    - identifier: archives
-      name: Archive
-      url: /archives/
-      weight: 30
