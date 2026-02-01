@@ -1,7 +1,7 @@
 ---
 date: '2026-01-31T16:24:50-05:00'
 draft: false
-title: 'Ocompress: Reclaiming Your Privacy with a Lightning-Fast, Local Image Optimizer'
+title: 'Ocompress: 用闪电般迅捷的本机图片优化器夺回你的隐私空间'
 tags: ["tech", "Image Compression", "MyApps"]
 categories: ["Development notes"]    
 ---
